@@ -198,7 +198,7 @@ Object.getOwnPropertyNames(obj).length // 2
 - `Object.prototype.isPrototypeOf()`：判断当前对象是否为另一个对象的原型。
 - `Object.prototype.propertyIsEnumerable()`：判断某个属性是否可枚举。
 
-### 5.1 Object.prototype.valueOf()
+### 5.1Object.prototype.valueOf()
 
 `valueOf`方法的作用是返回一个对象的“值”，默认情况下返回对象本身。
 
@@ -229,7 +229,7 @@ obj.valueOf = function () {
 
 上面代码自定义了`obj`对象的`valueOf`方法，于是`1 + obj`就得到了`3`。这种方法就相当于用自定义的`obj.valueOf`，覆盖`Object.prototype.valueOf`。
 
-### 5.2 Object.prototype.toString()
+### 5.2Object.prototype.toString()
 
 `toString`方法的作用是返回一个对象的字符串形式，默认情况下返回类型字符串。
 
@@ -369,7 +369,7 @@ type.isNumber(NaN) // true
 type.isRegExp(/abc/) // true
 ```
 
-### 5.4 Object.prototype.toLocaleString()
+### 5.4Object.prototype.toLocaleString()
 
 `Object.prototype.toLocaleString`方法与`toString`的返回结果相同，也是返回一个值的字符串形式。
 
@@ -411,7 +411,7 @@ date.toString() // "Tue Jan 01 2018 12:01:33 GMT+0800 (CST)"
 date.toLocaleString() // "1/01/2018, 12:01:33 PM"
 ```
 
-### 5.5 Object.prototype.hasOwnProperty()
+### 5.5Object.prototype.hasOwnProperty()
 
 `Object.prototype.hasOwnProperty`方法接受一个字符串作为参数，返回一个布尔值，表示该实例对象自身是否具有该属性。
 
